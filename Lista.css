@@ -1,0 +1,117 @@
+:root {
+    --primary: rgb(150, 115, 155);
+    --secondary: rgb(86, 15, 119);
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e2aec8;
+    --diabled2: #bd85a1;
+    --input: #e7e7e7;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--diabled);
+
+}
+
+::first-letter{
+    text-transform: capitalize;
+}
+
+.roundBorder {
+border-radius: 5px;
+}
+
+.list{
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateLeft {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#dateMonth {
+    margin-left: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--input);
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton {
+border: none;
+font-weight: bolder;
+cursor: pointer;
+color: rgb(211, 95, 176);
+font-size: 18px;
+height: 35px;
+border-radius: 50%;
+}
+
+.orderButton{
+    border: none;
+font-weight: bold;
+cursor: pointer;
+background-color: var(--secondary);
+color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;}
+
+    .done {
+        background-color: var(--diabled2);
+        text-decoration: line-through;
+        color: var(--dark);
+
+    }
